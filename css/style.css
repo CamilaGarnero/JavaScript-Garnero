@@ -1,0 +1,66 @@
+body {
+    background: #dfeeef;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+#container {
+    width: 60%;
+    background: rgb(6, 187, 163);
+    margin: 20px auto;
+    overflow: auto;
+    padding: 25px;
+    border-radius: 10px;
+}
+header {
+    text-align: center;
+    border-bottom: 1px dashed #fff;
+}
+header h1 {
+    margin: 0;
+    padding: 0;
+    color: rgb(94, 18, 236);
+}
+header p {
+    padding: 0;
+    margin-top: 5px;
+    color: #000000;
+}
+section {
+    min-height: 410px;
+}
+.formulario h3 {
+    background: #91db4b;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 6px;
+}
+h3 {
+    color: #000000;
+}
+input[type='submit'] {
+    background: #26d8f0;
+    border: 0;
+    color: rgb(5, 5, 5);
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+input[type='submit']:hover {
+    background: #4b26f0;
+    border: 0;
+    color: #fff;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+#resultado h3 {
+    background: #c6db4b;
+    padding: 10px;
+    margin: 10px 0;
+}
+#resultado span {
+    color: #000;
+    font-weight: bold;
+}
