@@ -1,12 +1,23 @@
+/* Menu Hamburgesa */
+const navToggle = document.querySelector(".nav-toggle");
+const navMenu = document.querySelector(".nav-menu");
+
+navToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("nav-menu_visible");
+});
+
+
+
+/* Cuestionario */
 function verificarRespuestas(){
 
-    var total = 8;
-    var puntos = 0;
+    let total = 8;
+    let puntos = 0;
 
-    var myForm = document.forms["quizForm"];
-    var respuestas = ["c","a","c","b","d","a","d","b"];
+    let myForm = document.forms["quizForm"];
+    let respuestas = ["c","a","c","b","d","a","d","b"];
 
-    for(var i = 1; i <= total;i++){
+    for(let i = 1; i <= total;i++){
         if(myForm["p" + i].value === null || myForm["p" + i].value === ''){
             alert("Por favor responde a la pregunta" + i);
             return false;
@@ -17,7 +28,7 @@ function verificarRespuestas(){
         }
     }
 
-    var resultado = document.getElementById('resultado');
+    let resultado = document.getElementById('resultado');
     resultado.innerHTML = '<h3>Obtuviste <span>'+puntos+'</span> de <span>'+total+' puntos</span></h3>';
 
     return false;
