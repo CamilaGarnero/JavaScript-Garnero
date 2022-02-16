@@ -175,3 +175,14 @@ section {
         }
     }
 }
+
+/* Store */
+section {
+    .store{
+        #listado {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+}

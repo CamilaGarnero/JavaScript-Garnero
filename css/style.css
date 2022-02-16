@@ -164,5 +164,11 @@ section #container #resultado span {
     left: 0;
   }
 }
+/* Store */
+section .store #listado {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 
 /*# sourceMappingURL=style.css.map */
