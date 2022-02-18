@@ -175,7 +175,27 @@ section {
         }
     }
 }
+/* Formoluario */
+section{
+    .suscribete {
+        background-color: rgb(51, 90, 177);
+        text-align: center;
 
+        h3 {
+            margin: 10px 0;
+        }
+
+        #form1 {
+            #email-form1{
+                width: 50%;
+                padding: 10px;
+                margin: 5px 0;
+                border-radius: 6px;
+                background-color: rgb(53, 94, 182);
+            }
+        }
+    }
+}
 /* Store */
 section {
     .store{

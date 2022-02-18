@@ -33,7 +33,15 @@ function verificarRespuestas(){
 
     return false;
 }
+/* Contact-Formulario1 */
+const formulario1 = document.getElementById('form1');
 
+formulario1.addEventListener('submit',(e) => {
+
+    e.preventDefault();
+    let mail = document.getElementById('email-form1').value
+    console.log(mail);
+})
 /* Store */
 const productos = [
     {

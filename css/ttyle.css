@@ -164,22 +164,6 @@ section #container #resultado span {
     left: 0;
   }
 }
-/* Formoluario */
-section .suscribete {
-  background-color: #335ab1;
-  text-align: center;
-}
-section .suscribete h3 {
-  margin: 10px 0;
-}
-section .suscribete #form1 #email-form1 {
-  width: 50%;
-  padding: 10px;
-  margin: 5px 0;
-  border-radius: 6px;
-  background-color: #355eb6;
-}
-
 /* Store */
 section .store #listado {
   display: flex;
@@ -187,4 +171,4 @@ section .store #listado {
   flex-wrap: wrap;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=ttyle.css.map */
