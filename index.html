@@ -16,8 +16,7 @@
                 <i class="fas fa-bars"></i>
             </button>
             <ul class="nav-menu">
-                <li class="nav-item"><a class="nav-link" href="pages/about.html">Quienes Somos</a>
-                <li class="nav-item"><a class="nav-link" href="#news">Noticias</a></li>    
+                <li class="nav-item"><a class="nav-link" href="pages/about.html">Quienes Somos</a>  
                 <li class="nav-item"><a class="nav-link" href="pages/donations.html">Donativos</a></li> 
                 <li class="nav-item"><a class="nav-link" href="pages/contact.html">Contacto</a></li>    
                 <li class="nav-item"><a class="nav-link" href="pages/store.html">Tienda</a></li>
@@ -25,72 +24,112 @@
         </nav>
     </header>
     <section>
-        <!-- Cuestionario -->
-        <div id="container">
-            <div class="tituloQuiz">
-                <h1>Cuestionario sobre Adopción</h1>
-                <p>Responde las siguientes preguntas: </p>
+        <!-- Carrucel de mascotas -->
+        <div class="carrusel">
+            <div class="carruselItem fade">
+                <div class="numbertext">1 / 5</div>
+                <img class="carrusel-img" src="assets/pexels-helena-lopes-1904105.jpg" alt="Perro siendo acariciado">
+                <div class="text">Caption Text</div>
             </div>
-        <div id="resultado"></div>
-            <form name="quizForm" onsubmit="return verificarRespuestas()" class="formulario">
-                <h3>1. Lorem ipsum dolor sit amet.</h3>
+            <div class="carruselItem fade">
+                <div class="numbertext">2 / 5</div>
+                <img class="carrusel-img" src="assets/pexels-mustafa-ezz-979503.jpg" alt="Tres gatitos durmiendo">
+                <div class="text">Caption Text</div>
+            </div>
+            <div class="carruselItem fade">
+                <div class="numbertext">3 / 5</div>
+                <img class="carrusel-img" src="assets/pexels-petar-starčević-2389072.jpg" alt="Conejo Negro">
+                <div class="text">Caption Text</div>
+            </div>
+            <div class="carruselItem fade">
+                <div class="numbertext">4 / 5</div>
+                <img class="carrusel-img" src="assets/pexels-pixabay-416160.jpg" alt="Gato Durmiendo Boca Arriba">
+                <div class="text">Caption Text</div>
+            </div>
+            <div class="carruselItem fade">
+                <div class="numbertext">5 / 5</div>
+                <img class="carrusel-img" src="assets/pexels-sharon-snider-4520482.jpg" alt="Hamster">
+                <div class="text">Caption Text</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
 
-                <input type="radio" name="p1" value="a">A. Lorem ipsum dolor sit amet. <br>
-                <input type="radio" name="p1" value="b">B. Lorem ipsum dolor sit amet. <br>
-                <input type="radio" name="p1" value="c">C. Lorem ipsum dolor sit amet. <br>
-                <input type="radio" name="p1" value="d">D. Lorem ipsum dolor sit amet. <br>
-            
-                <h3>2. Lorem ipsum dolor sit amet.</h3>
-
-                <input type="radio" name="p2" value="a">A. Lorem ipsum dolor sit amet. <br>
-                <input type="radio" name="p2" value="b">B. Lorem ipsum dolor sit amet. <br>
-                <input type="radio" name="p2" value="c">C. Lorem ipsum dolor sit amet. <br>
-                <input type="radio" name="p2" value="d">D. Lorem ipsum dolor sit amet. <br>
-
-                <h3>3. Lorem ipsum dolor sit amet.</h3>
-
-                <input type="radio" name="p3" value="a">A. Lorem ipsum dolor sit amet. <br>
-                <input type="radio" name="p3" value="b">B. Lorem ipsum dolor sit amet. <br>
-                <input type="radio" name="p3" value="c">C. Lorem ipsum dolor sit amet. <br>
-                <input type="radio" name="p3" value="d">D. Lorem ipsum dolor sit amet. <br>
-
-                <h3>4. Lorem ipsum dolor sit amet.</h3>
-
-                <input type="radio" name="p4" value="a">A. Lorem ipsum dolor sit amet. <br>
-                <input type="radio" name="p4" value="b">B. Lorem ipsum dolor sit amet. <br>
-                <input type="radio" name="p4" value="c">C. Lorem ipsum dolor sit amet. <br>
-                <input type="radio" name="p4" value="d">D. Lorem ipsum dolor sit amet. <br>
-
-                <h3>5. Lorem ipsum dolor sit amet.</h3>
-
-                <input type="radio" name="p5" value="a">A. Lorem ipsum dolor sit amet. <br>
-                <input type="radio" name="p5" value="b">B. Lorem ipsum dolor sit amet. <br>
-                <input type="radio" name="p5" value="c">C. Lorem ipsum dolor sit amet. <br>
-                <input type="radio" name="p5" value="d">D. Lorem ipsum dolor sit amet. <br>
-
-                <h3>6. Lorem ipsum dolor sit amet.</h3>
-
-                <input type="radio" name="p6" value="a">A. Lorem ipsum dolor sit amet. <br>
-                <input type="radio" name="p6" value="b">B. Lorem ipsum dolor sit amet. <br>
-                <input type="radio" name="p6" value="c">C. Lorem ipsum dolor sit amet. <br>
-                <input type="radio" name="p6" value="d">D. Lorem ipsum  dolor sit amet. <br>
-
-                <h3>7. Lorem ipsum dolor sit amet.</h3>
-
-                <input type="radio" name="p7" value="a">A. Lorem ipsum dolor sit amet. <br>
-                <input type="radio" name="p7" value="b">B. Lorem ipsum dolor sit amet. <br>
-                <input type="radio" name="p7" value="c">C. Lorem ipsum dolor sit amet. <br>
-                <input type="radio" name="p7" value="d">D. Lorem ipsum  dolor sit amet. <br>
-
-                <h3>8. Lorem ipsum dolor sit amet.</h3>
-
-                <input type="radio" name="p8" value="a">A. Lorem ipsum dolor sit amet. <br>
-                <input type="radio" name="p8" value="b">B. Lorem ipsum dolor sit amet. <br>
-                <input type="radio" name="p8" value="c">C. Lorem ipsum dolor sit amet. <br>
-                <input type="radio" name="p8" value="d">D. Lorem ipsum  dolor sit amet. <br>
-                
-                <input type="submit" value="Enviar">
-            </form>
+        <!-- Formulario de reguistro -->
+        <div class="container">
+            <h1>Registro</h1>
+            <div class="form-princ">
+                <form action="#">
+                    <!-- Pag 1 -->
+                    <div class="pagina">
+                        <div class="titulo">Informacion Principal</div>
+                        <div class="campo">
+                            <div class="label">Nombre: </div>
+                            <input type="text" id="nombre" placeholder="Nombre">
+                        </div>
+                        <div class="campo">
+                            <div class="label">Apellido: </div>
+                            <input type="text" id="apellido" placeholder="Apellido">
+                        </div>
+                        <div class="campo">
+                            <button>Siguiente</button>
+                        </div>
+                    </div>
+                    <!-- Pag 2 -->
+                    <div class="pagina">
+                        <div class="titulo">Informacion secundaria</div>
+                        <div class="campo">
+                            <div class="label">Fecha de nacimiento: </div>
+                            <input type="date" id="fechaNac">
+                        </div>
+                        <div class="campo">
+                            <div class="label">Sexo</div>
+                            <select id="sexo">
+                                <option value="-1" disabled selected>Escoge una opción</option>
+                                <option value="0">Masculino</option>
+                                <option value="1">Femenino</option>
+                                <option value="2">Sin especificar</option>
+                            </select>
+                        </div>
+                        <div class="campo btns">
+                            <button class="volver-pag1 volver">Atrás</button>
+                            <button class="adelante-pag3 adelante">Siguiente</button>
+                        </div>
+                    </div>
+                    <!-- Pag 3 -->
+                    <div class="pagina">
+                        <div class="titulo">Informacion de contacto</div>
+                        <div class="campo">
+                            <div class="label">Correo Electrónico: </div>
+                            <input type="text" id="correo" placeholder="Correo Electrónico">
+                        </div>
+                        <div class="campo">
+                            <div class="label">Teléfono</div>
+                            <input type="text" id="numCel" placeholder="Teléfono">
+                        </div>
+                        <div class="campo btns">
+                            <button class="volver-pag2 volver">Atrás</button>
+                            <button class="adelante-pag4 adelante">Siguiente</button>
+                        </div>
+                    </div>
+                    <!-- Pag 4 -->
+                    <div class="pagina">
+                        <div class="titulo">Informacion de Inicio Seción</div>
+                        <div class="campo">
+                            <div class="label">Nombre de Usuario: </div>
+                            <input type="text" id="usuario" placeholder="Nombre de Usuario">
+                        </div>
+                        <div class="campo">
+                            <div class="label">Contraseña: </div>
+                            <input type="password" id="contra" placeholder="Contraseña">
+                        </div>
+                        <div class="campo btns">
+                            <button class="volver-pag3 volver">Atrás</button>
+                            <button class="Fin">Finalizar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
     </section>
 

@@ -64,70 +64,75 @@ body{
         }
     }
 }
+/* Carrusel */
 section {
-    min-height: 410px;
-/* Cuestionario */
-    #container {
-        width: 60%;
-        background: rgb(22, 22, 22);
-        margin: 20px auto;
-        overflow: auto;
-        padding: 25px;
-        border-radius: 10px;
-        
-        .tituloQuiz {
-            text-align: center;
-            border-bottom: 1px dashed #fff;
+    .carrusel {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
 
-            h1 {
-                margin: 0;
-                padding: 0;
-                color: rgb(94, 18, 236);
+        .carruselItem {
+            display: none;
+
+            .numbertext {
+                color: #034574;
+                font-size: 12px;
+                padding: 8px 12px;
+                position: absolute;
+                top: 0;
             }
-    
-            p {
-                padding: 0;
-                margin-top: 5px;
-                color: #ffffff;
+            .carrusel-img {
+                width: inherit;
+            }
+            .text {
+                color: #034574;
+                font-size: 15px;
+                padding: 8px 12px;
+                position: absolute;
+                bottom: 8px;
+                width: 100%;
+                text-align: center;
             }
         }
-        .formulario h3 {
-            background: #91db4b;
-            padding: 10px;
-            margin: 10px 0;
-            border-radius: 6px;
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
         }
-        h3 {
-            color: #fdfdfd;
+        @-webkit-keyframes fade {
+            from{opacity: .4;}
+            to{opacity: 1;}
         }
-        input[type='submit'] {
-            background: #26d8f0;
-            border: 0;
-            color: rgb(0, 0, 0);
-            padding: 10px 15px;
+        keyframes fade {
+            from{opacity: .4};
+            to{opacity: 1};
+        }
+        .prev, .next {
             cursor: pointer;
-            margin-top: 20px;
-            border-radius: 6px;
-        }
-        input[type='submit']:hover {
-            background: #4b26f0;
-            border: 0;
-            color: #fff;
-            padding: 10px 15px;
-            cursor: pointer;
-            margin-top: 20px;
-        }
-        #resultado h3 {
-            background: #c6db4b;
-            padding: 10px;
-            margin: 10px 0;
-        }
-        #resultado span {
-            color: #000;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: #034574;
             font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+        }
+        .next{
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        .prev:hover, .next:hover{
+            background-color: rgba(0,0,0,0.8);
+            color: #fff;
         }
     }
 }
+/* Formulario de Registro */
+
 
 @media (max-width: 768px){
     body{

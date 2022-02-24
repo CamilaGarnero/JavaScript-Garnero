@@ -62,68 +62,77 @@ body .header .nav .nav-menu .nav-item .nav-link:hover {
   transition: 0.5s;
 }
 
-section {
-  min-height: 410px;
-  /* Cuestionario */
+/* Carrusel */
+section .carrusel {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
 }
-section #container {
-  width: 60%;
-  background: #161616;
-  margin: 20px auto;
-  overflow: auto;
-  padding: 25px;
-  border-radius: 10px;
+section .carrusel .carruselItem {
+  display: none;
 }
-section #container .tituloQuiz {
+section .carrusel .carruselItem .numbertext {
+  color: #034574;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+section .carrusel .carruselItem .carrusel-img {
+  width: inherit;
+}
+section .carrusel .carruselItem .text {
+  color: #034574;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
   text-align: center;
-  border-bottom: 1px dashed #fff;
 }
-section #container .tituloQuiz h1 {
-  margin: 0;
-  padding: 0;
-  color: #5e12ec;
+section .carrusel .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
-section #container .tituloQuiz p {
-  padding: 0;
-  margin-top: 5px;
-  color: #ffffff;
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
-section #container .formulario h3 {
-  background: #91db4b;
-  padding: 10px;
-  margin: 10px 0;
-  border-radius: 6px;
+section .carrusel keyframes fade from {
+  opacity: 0.4;
 }
-section #container h3 {
-  color: #fdfdfd;
+section .carrusel keyframes fade to {
+  opacity: 1;
 }
-section #container input[type=submit] {
-  background: #26d8f0;
-  border: 0;
-  color: black;
-  padding: 10px 15px;
+section .carrusel .prev, section .carrusel .next {
   cursor: pointer;
-  margin-top: 20px;
-  border-radius: 6px;
-}
-section #container input[type=submit]:hover {
-  background: #4b26f0;
-  border: 0;
-  color: #fff;
-  padding: 10px 15px;
-  cursor: pointer;
-  margin-top: 20px;
-}
-section #container #resultado h3 {
-  background: #c6db4b;
-  padding: 10px;
-  margin: 10px 0;
-}
-section #container #resultado span {
-  color: #000;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #034574;
   font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+section .carrusel .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+section .carrusel .prev:hover, section .carrusel .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
 }
 
+/* Formulario de Registro */
 @media (max-width: 768px) {
   body {
     padding-top: 70px;

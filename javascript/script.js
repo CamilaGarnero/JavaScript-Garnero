@@ -6,7 +6,23 @@ navToggle.addEventListener("click", () => {
     navMenu.classList.toggle("nav-menu_visible");
 });
 
+/* Carrusel */
+let slideIndex = 0;
 
+showSlides();
+
+function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("carruselItem");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].getElementsByClassName.display = "none";
+    }
+
+    slideIndex++;
+    if(slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].getElementsByClassName.display = "block";
+    setTimeout(showSlides,2000);
+}
 
 /* Cuestionario */
 function verificarRespuestas(){
