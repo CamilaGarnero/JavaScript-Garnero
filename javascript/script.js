@@ -7,6 +7,8 @@ navToggle.addEventListener("click", () => {
 });
 
 /* Carrusel */
+let prev = plusSlides(-1);
+let next = plusSlides(1);
 let slideIndex = 0;
 
 showSlides();
@@ -23,32 +25,31 @@ function showSlides() {
     slides[slideIndex-1].getElementsByClassName.display = "block";
     setTimeout(showSlides,2000);
 }
+/* Formulario de Reguistro */
+document.getElementById("btnInicioSecion").addEventListener("click",iniciarSecion);
+document.getElementById("btnReguistrarse").addEventListener("click",register);
 
-/* Cuestionario */
-function verificarRespuestas(){
+let loginRegister = document.querySelector(".contenedor__login-register");
+let formLogin = document.querySelector(".formLogin");
+let formRegister = document.querySelector(".formRegister");
+let atrasLogin = document.querySelector(".cajaAtrasLogin");
+let atrasRegister = document.querySelector(".cajaAtrasRegister");
 
-    let total = 8;
-    let puntos = 0;
-
-    let myForm = document.forms["quizForm"];
-    let respuestas = ["c","a","c","b","d","a","d","b"];
-
-    for(let i = 1; i <= total;i++){
-        if(myForm["p" + i].value === null || myForm["p" + i].value === ''){
-            alert("Por favor responde a la pregunta" + i);
-            return false;
-        }else{
-            if(myForm["p" + i].value === respuestas[i - 1]){
-                puntos++;
-            }
-        }
-    }
-
-    let resultado = document.getElementById('resultado');
-    resultado.innerHTML = '<h3>Obtuviste <span>'+puntos+'</span> de <span>'+total+' puntos</span></h3>';
-
-    return false;
+function iniciarSecion () {
+    formRegister.style.display = "none";
+    loginRegister.style.left = "10px";
+    formLogin.style.display = "block";
+    atrasRegister.style.opacity = "1";
+    atrasLogin.style.opacity = "0";
 }
+function register () {
+    formRegister.style.display = "block";
+    loginRegister.style.left = "410px";
+    formLogin.style.display = "none";
+    atrasRegister.style.opacity = "0";
+    atrasLogin.style.opacity = "1";
+}
+
 /* Contact-Formulario1 */
 const formulario1 = document.getElementById('form1');
 

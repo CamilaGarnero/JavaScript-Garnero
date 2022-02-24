@@ -8,10 +8,11 @@
 body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   padding: 90px 20px 0;
+  background-color: #171718;
   /* NavBar */
 }
 body .header {
-  background-color: #030303e8;
+  background-color: #222020e8;
   height: 80px;
   position: fixed;
   width: 100%;
@@ -29,6 +30,10 @@ body .header .nav .logo {
   font-weight: bold;
   padding: 0 40px;
   line-height: 80px;
+  color: #f7dc83;
+}
+body .header .nav .logo:hover {
+  color: #d3a529;
 }
 body .header .nav .nav-toggle {
   color: white;
@@ -57,9 +62,10 @@ body .header .nav .nav-menu .nav-item .nav-link {
   padding: 8px 12px;
 }
 body .header .nav .nav-menu .nav-item .nav-link:hover {
-  border: 1px solid #034574;
+  border: 1px solid #796703;
   border-radius: 3px;
   transition: 0.5s;
+  color: #caac27;
 }
 
 /* Carrusel */
@@ -133,6 +139,97 @@ section .carrusel .prev:hover, section .carrusel .next:hover {
 }
 
 /* Formulario de Registro */
+section .contenedorAll {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  position: relative;
+}
+section .contenedorAll .cajaAtras {
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  background-color: rgba(41, 41, 42, 0.5);
+}
+section .contenedorAll .cajaAtras .cajaAtrasLogin, section .contenedorAll .cajaAtras .cajaAtrasRegister {
+  margin: 100px 40px;
+  color: #f7dc83;
+  transition: all 500ms;
+}
+section .contenedorAll .cajaAtras .cajaAtrasLogin p, section .contenedorAll .cajaAtras .cajaAtrasLogin button, section .contenedorAll .cajaAtras .cajaAtrasRegister p, section .contenedorAll .cajaAtras .cajaAtrasRegister button {
+  margin: 30px;
+}
+section .contenedorAll .cajaAtras .cajaAtrasLogin h3, section .contenedorAll .cajaAtras .cajaAtrasRegister h3 {
+  font-weight: 400;
+  font-size: 26px;
+}
+section .contenedorAll .cajaAtras .cajaAtrasLogin button, section .contenedorAll .cajaAtras .cajaAtrasRegister button {
+  padding: 10px 40px;
+  border: 2px solid #e0a117;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #f7dc83;
+  outline: none;
+  transition: all 300ms;
+}
+section .contenedorAll .cajaAtras .cajaAtrasLogin button:hover, section .contenedorAll .cajaAtras .cajaAtrasRegister button:hover {
+  background: #caac27;
+  color: #080808;
+}
+section .contenedorAll .contenedor__login-register {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 380px;
+  position: relative;
+  top: -240px;
+  left: 10px;
+  transition: left 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+section .contenedorAll .contenedor__login-register form {
+  width: 100%;
+  padding: 80px 20px;
+  background: #fff;
+  position: absolute;
+  border-radius: 20px;
+}
+section .contenedorAll .contenedor__login-register form h2 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #caac27;
+}
+section .contenedorAll .contenedor__login-register form input {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  background: #f2f2f2;
+  font-size: 16px;
+  outline: none;
+}
+section .contenedorAll .contenedor__login-register form button {
+  padding: 10px 40px;
+  margin-top: 40px;
+  border: none;
+  font-size: 14px;
+  background: #caac27;
+  color: black;
+  cursor: pointer;
+  outline: none;
+}
+section .contenedorAll .contenedor__login-register .formLogin {
+  opacity: 1;
+  display: block;
+}
+section .contenedorAll .contenedor__login-register .formRegister {
+  display: none;
+}
+
 @media (max-width: 768px) {
   body {
     padding-top: 70px;
@@ -173,6 +270,30 @@ section .carrusel .prev:hover, section .carrusel .next:hover {
     left: 0;
   }
 }
+/* About */
+section .contenedorAbout {
+  display: flex;
+}
+section .contenedorAbout .equipo {
+  background-color: #fff;
+  padding: 20px;
+  width: 50%;
+  border-radius: 6px;
+}
+section .contenedorAbout .equipo h1 {
+  color: #caac27;
+}
+section .contenedorAbout .yo {
+  background-color: #fff;
+  padding: 20px;
+  width: 50%;
+  margin-left: 20px;
+  border-radius: 6px;
+}
+section .contenedorAbout .yo h2 {
+  color: #caac27;
+}
+
 /* Formoluario */
 section .suscribete {
   background-color: #335ab1;

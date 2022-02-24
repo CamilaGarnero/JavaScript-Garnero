@@ -11,7 +11,7 @@
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="index.html" class="logo">KalMissy</a>
+            <a href="index.html" class="logo">KallMissy</a>
             <button class="nav-toggle">
                 <i class="fas fa-bars"></i>
             </button>
@@ -56,78 +56,33 @@
         </div>
 
         <!-- Formulario de reguistro -->
-        <div class="container">
-            <h1>Registro</h1>
-            <div class="form-princ">
-                <form action="#">
-                    <!-- Pag 1 -->
-                    <div class="pagina">
-                        <div class="titulo">Informacion Principal</div>
-                        <div class="campo">
-                            <div class="label">Nombre: </div>
-                            <input type="text" id="nombre" placeholder="Nombre">
-                        </div>
-                        <div class="campo">
-                            <div class="label">Apellido: </div>
-                            <input type="text" id="apellido" placeholder="Apellido">
-                        </div>
-                        <div class="campo">
-                            <button>Siguiente</button>
-                        </div>
-                    </div>
-                    <!-- Pag 2 -->
-                    <div class="pagina">
-                        <div class="titulo">Informacion secundaria</div>
-                        <div class="campo">
-                            <div class="label">Fecha de nacimiento: </div>
-                            <input type="date" id="fechaNac">
-                        </div>
-                        <div class="campo">
-                            <div class="label">Sexo</div>
-                            <select id="sexo">
-                                <option value="-1" disabled selected>Escoge una opción</option>
-                                <option value="0">Masculino</option>
-                                <option value="1">Femenino</option>
-                                <option value="2">Sin especificar</option>
-                            </select>
-                        </div>
-                        <div class="campo btns">
-                            <button class="volver-pag1 volver">Atrás</button>
-                            <button class="adelante-pag3 adelante">Siguiente</button>
-                        </div>
-                    </div>
-                    <!-- Pag 3 -->
-                    <div class="pagina">
-                        <div class="titulo">Informacion de contacto</div>
-                        <div class="campo">
-                            <div class="label">Correo Electrónico: </div>
-                            <input type="text" id="correo" placeholder="Correo Electrónico">
-                        </div>
-                        <div class="campo">
-                            <div class="label">Teléfono</div>
-                            <input type="text" id="numCel" placeholder="Teléfono">
-                        </div>
-                        <div class="campo btns">
-                            <button class="volver-pag2 volver">Atrás</button>
-                            <button class="adelante-pag4 adelante">Siguiente</button>
-                        </div>
-                    </div>
-                    <!-- Pag 4 -->
-                    <div class="pagina">
-                        <div class="titulo">Informacion de Inicio Seción</div>
-                        <div class="campo">
-                            <div class="label">Nombre de Usuario: </div>
-                            <input type="text" id="usuario" placeholder="Nombre de Usuario">
-                        </div>
-                        <div class="campo">
-                            <div class="label">Contraseña: </div>
-                            <input type="password" id="contra" placeholder="Contraseña">
-                        </div>
-                        <div class="campo btns">
-                            <button class="volver-pag3 volver">Atrás</button>
-                            <button class="Fin">Finalizar</button>
-                        </div>
-                    </div>
+        <div class="contenedorAll">
+            <div class="cajaAtras">
+                <div class="cajaAtrasLogin">
+                    <h3>¿Ya tienes una cuenta?</h3>
+                    <p>Inicia sesión para entrar entrar en tu cuenta</p>
+                    <button id="btnInicioSecion">Iniciar Seción</button>
+                </div>
+                <div class="cajaAtrasRegister">
+                    <h3>¿Aún no tienes una cuenta?</h3>
+                    <p>Reguistrate para que puedas iniciar sesión</p>
+                    <button id="btnReguistrarse">Reguistrarse</button>
+                </div>
+            </div>
+            <div class="contenedor__login-register">
+                <form class="formLogin" action="">
+                    <h2>Iniciar Sesión</h2>
+                    <input type="text" placeholder="Correo Electronico">
+                    <input type="password" placeholder="Contraseña">
+                    <button>Enviar</button>
+                </form>
+                <form class="formRegister" action="">
+                    <h2>Reguistrate</h2>
+                    <input type="text" placeholder="Nombre Completo">
+                    <input type="text" placeholder="Correo Electronico">
+                    <input type="text" placeholder="Usuario">
+                    <input type="password" placeholder="Contraseña">
+                    <button>Reguistrarse</button>
                 </form>
             </div>
         </div>

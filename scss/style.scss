@@ -1,3 +1,6 @@
+$colororo: #caac27;
+
+
 *{
     margin: 0;
     padding: 0;
@@ -7,9 +10,10 @@
 body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 90px 20px 0; 
+    background-color: #171718;
     /* NavBar */
     .header{
-        background-color: #030303e8;
+        background-color: #222020e8;
         height: 80px;
         position: fixed;
         width: 100%;
@@ -27,6 +31,10 @@ body{
                 font-weight: bold;
                 padding: 0 40px;
                 line-height: 80px;
+                color: #f7dc83;
+            }
+            .logo:hover {
+                color: #d3a529;
             }
             .nav-toggle{
                 color: white;
@@ -55,9 +63,10 @@ body{
                         padding: 8px 12px;
                     }
                     .nav-link:hover{
-                        border: 1px solid #034574;
+                        border: 1px solid #796703;
                         border-radius: 3px;
                         transition: 0.5s;
+                        color: $colororo;
                     }
                 }
             }
@@ -132,8 +141,103 @@ section {
     }
 }
 /* Formulario de Registro */
+section {
+    .contenedorAll {
+        width: 100%;
+        max-width: 800px;
+        margin: auto;
+        position: relative;
 
+        .cajaAtras{
+            width: 100%;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: center;
+            backdrop-filter: blur(10px);
+            background-color: rgba(41, 41, 42, 0.5);
 
+            .cajaAtrasLogin, .cajaAtrasRegister {
+                margin: 100px 40px;
+                color: #f7dc83;
+                transition: all 500ms;
+
+                p, button {
+                    margin: 30px;
+                }
+                h3 {
+                    font-weight: 400;
+                    font-size: 26px;
+                }
+                button {
+                    padding: 10px 40px;
+                    border: 2px solid rgb(224, 161, 23);
+                    background: transparent;
+                    font-size: 14px;
+                    font-weight: 600;
+                    cursor: pointer;
+                    color: #f7dc83;
+                    outline: none;
+                    transition: all 300ms;
+                }
+                button:hover {
+                    background: $colororo;
+                    color: #080808;
+                }
+            }
+        }
+        .contenedor__login-register {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            max-width: 380px;
+            position: relative;
+            top: -240px;
+            left: 10px;
+            transition: left 500ms cubic-bezier(0.175,0.885,0.320,1.275);
+
+            form {
+                width: 100%;
+                padding: 80px 20px;
+                background: #fff;
+                position: absolute;
+                border-radius: 20px;
+
+                h2 {
+                    font-size: 30px;
+                    text-align: center;
+                    margin-bottom: 20px;
+                    color: $colororo;
+                }
+                input{
+                    width: 100%;
+                    margin-top: 20px;
+                    padding: 10px;
+                    border: none;
+                    background: #f2f2f2;
+                    font-size: 16px;
+                    outline: none;
+                }
+                button {
+                    padding: 10px 40px;
+                    margin-top: 40px;
+                    border: none;
+                    font-size: 14px;
+                    background: $colororo;
+                    color: rgb(0, 0, 0);
+                    cursor: pointer;
+                    outline: none;
+                }
+            }
+            .formLogin {
+                opacity: 1;
+                display: block;
+            }
+            .formRegister {
+                display: none;
+            }
+        }
+    }
+}
 @media (max-width: 768px){
     body{
         padding-top: 70px;
@@ -176,6 +280,32 @@ section {
             }
             .nav-menu_visible{
                 left: 0;
+            }
+        }
+    }
+}
+/* About */
+section{
+    .contenedorAbout{
+        display: flex;
+
+        .equipo{
+            background-color: #fff;
+            padding: 20px;
+            width: 50%;
+            border-radius: 6px;
+            h1 {
+                color: $colororo;
+            }
+        }
+        .yo {
+            background-color: #fff;
+            padding: 20px;
+            width: 50%;
+            margin-left: 20px;
+            border-radius: 6px;
+            h2 {
+                color: $colororo;
             }
         }
     }
