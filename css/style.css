@@ -60,6 +60,7 @@ body .header .nav .nav-menu .nav-item {
 body .header .nav .nav-menu .nav-item .nav-link {
   color: white;
   padding: 8px 12px;
+  font-family: "Poppins", sans-serif;
 }
 body .header .nav .nav-menu .nav-item .nav-link:hover {
   border: 1px solid #796703;
@@ -69,73 +70,13 @@ body .header .nav .nav-menu .nav-item .nav-link:hover {
 }
 
 /* Carrusel */
-section .carrusel {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-section .carrusel .carruselItem {
-  display: none;
-}
-section .carrusel .carruselItem .numbertext {
-  color: #034574;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-section .carrusel .carruselItem .carrusel-img {
-  width: inherit;
-}
-section .carrusel .carruselItem .text {
-  color: #034574;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
+section .carousel {
   width: 100%;
-  text-align: center;
+  height: 100px;
+  border-radius: 6px;
 }
-section .carrusel .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-section .carrusel keyframes fade from {
-  opacity: 0.4;
-}
-section .carrusel keyframes fade to {
-  opacity: 1;
-}
-section .carrusel .prev, section .carrusel .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: #034574;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-}
-section .carrusel .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-section .carrusel .prev:hover, section .carrusel .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #fff;
+section .carousel .carousel-inner {
+  border-radius: 6px;
 }
 
 /* Formulario de Registro */
@@ -193,7 +134,7 @@ section .contenedorAll .contenedor__login-register {
 section .contenedorAll .contenedor__login-register form {
   width: 100%;
   padding: 80px 20px;
-  background: #fff;
+  background: #444444;
   position: absolute;
   border-radius: 20px;
 }
@@ -201,7 +142,7 @@ section .contenedorAll .contenedor__login-register form h2 {
   font-size: 30px;
   text-align: center;
   margin-bottom: 20px;
-  color: #caac27;
+  color: #ffd904;
 }
 section .contenedorAll .contenedor__login-register form input {
   width: 100%;

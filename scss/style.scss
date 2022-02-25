@@ -1,4 +1,6 @@
 $colororo: #caac27;
+$colorbrillante: #ffd904;
+$home:'Poppins', sans-serif;
 
 
 *{
@@ -61,6 +63,7 @@ body{
                     .nav-link{
                         color: white;
                         padding: 8px 12px;
+                        font-family: $home;
                     }
                     .nav-link:hover{
                         border: 1px solid #796703;
@@ -74,69 +77,14 @@ body{
     }
 }
 /* Carrusel */
-section {
-    .carrusel {
-        max-width: 1000px;
-        position: relative;
-        margin: auto;
+section{
+    .carousel {
+        width: 100%;
+        height: 100px;
+        border-radius: 6px;
 
-        .carruselItem {
-            display: none;
-
-            .numbertext {
-                color: #034574;
-                font-size: 12px;
-                padding: 8px 12px;
-                position: absolute;
-                top: 0;
-            }
-            .carrusel-img {
-                width: inherit;
-            }
-            .text {
-                color: #034574;
-                font-size: 15px;
-                padding: 8px 12px;
-                position: absolute;
-                bottom: 8px;
-                width: 100%;
-                text-align: center;
-            }
-        }
-        .fade {
-            -webkit-animation-name: fade;
-            -webkit-animation-duration: 1.5s;
-            animation-name: fade;
-            animation-duration: 1.5s;
-        }
-        @-webkit-keyframes fade {
-            from{opacity: .4;}
-            to{opacity: 1;}
-        }
-        keyframes fade {
-            from{opacity: .4};
-            to{opacity: 1};
-        }
-        .prev, .next {
-            cursor: pointer;
-            position: absolute;
-            top: 50%;
-            width: auto;
-            margin-top: -22px;
-            padding: 16px;
-            color: #034574;
-            font-weight: bold;
-            font-size: 18px;
-            transition: 0.6s ease;
-            border-radius: 0 3px 3px 0;
-        }
-        .next{
-            right: 0;
-            border-radius: 3px 0 0 3px;
-        }
-        .prev:hover, .next:hover{
-            background-color: rgba(0,0,0,0.8);
-            color: #fff;
+        .carousel-inner {
+            border-radius: 6px;
         }
     }
 }
@@ -198,7 +146,7 @@ section {
             form {
                 width: 100%;
                 padding: 80px 20px;
-                background: #fff;
+                background: rgb(68, 68, 68);
                 position: absolute;
                 border-radius: 20px;
 
@@ -206,7 +154,7 @@ section {
                     font-size: 30px;
                     text-align: center;
                     margin-bottom: 20px;
-                    color: $colororo;
+                    color: $colorbrillante;
                 }
                 input{
                     width: 100%;

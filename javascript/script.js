@@ -7,24 +7,7 @@ navToggle.addEventListener("click", () => {
 });
 
 /* Carrusel */
-let prev = plusSlides(-1);
-let next = plusSlides(1);
-let slideIndex = 0;
 
-showSlides();
-
-function showSlides() {
-    let i;
-    let slides = document.getElementsByClassName("carruselItem");
-    for (i = 0; i < slides.length; i++) {
-        slides[i].getElementsByClassName.display = "none";
-    }
-
-    slideIndex++;
-    if(slideIndex > slides.length) {slideIndex = 1}
-    slides[slideIndex-1].getElementsByClassName.display = "block";
-    setTimeout(showSlides,2000);
-}
 /* Formulario de Reguistro */
 document.getElementById("btnInicioSecion").addEventListener("click",iniciarSecion);
 document.getElementById("btnReguistrarse").addEventListener("click",register);
