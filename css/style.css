@@ -273,50 +273,76 @@ section .contenedorAbout .yo h2 {
 }
 
 /* Formoluario */
+section .contactForm {
+  width: 50%;
+  padding: 40px;
+  background: beige;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+section .contactForm h2 {
+  font-size: 30px;
+  color: #796703;
+  font-weight: 500;
+}
+section .contactForm .inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+section .contactForm .inputBox input {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #caac27;
+  outline: none;
+  resize: none;
+}
+section .contactForm .inputBox textarea {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #caac27;
+  outline: none;
+}
 section .suscribete {
-  background-color: #335ab1;
+  background-color: beige;
   text-align: center;
 }
 section .suscribete h3 {
   margin: 10px 0;
+  color: #796703;
 }
 section .suscribete #form1 #email-form1 {
   width: 50%;
   padding: 10px;
   margin: 5px 0;
   border-radius: 6px;
-  background-color: #355eb6;
+  background-color: #796703;
 }
 
 /* Store */
 main {
-  padding: 20px;
+  padding: 0;
+  margin: 0;
+  background: #171718;
 }
-main .title {
-  color: #796703;
+main .container-store .title {
+  color: #caac27;
   text-align: center;
 }
-main .container-products {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
+main .container h4 {
+  color: #caac27;
 }
-main .container-products .product {
-  border: 1px solid #ccc;
-  padding: 20px;
+main .container .table .shop-items .line-shop {
+  color: #ffd904;
 }
-main .container-products .product .product__description .product__title {
-  text-align: center;
-  color: #ccc;
-}
-main .container-products .product .product__description .product__price {
-  color: #f2f2f2;
-}
-main .container-products .product .product__icon {
-  display: block;
-  text-align: right;
-  color: #796703;
-  margin: auto;
+main .container .table .shop-items .line-shop .items-shop {
+  color: #ffd904 !important;
 }
 
 /*# sourceMappingURL=style.css.map */

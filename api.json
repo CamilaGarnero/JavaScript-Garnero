@@ -1,0 +1,38 @@
+[
+    {
+        "precio": 2600,
+        "id": 1,
+        "title": "Cama para Gatos",
+        "thumbnailUrl": "../assets/CamaGato.jpg"
+    },
+    {
+        "precio": 1570,
+        "id": 2,
+        "title": "Cama para Perros",
+        "thumbnailUrl": "../assets/CamaPerro.jpg"
+    },
+    {
+        "precio": 100,
+        "id": 3,
+        "title": "Pelotas para perros",
+        "thumbnailUrl": "../assets/Pelotas (1).jpg"
+    },
+    {
+        "precio": 5000,
+        "id": 4,
+        "title": "Torre para Gatos",
+        "thumbnailUrl": "../assets/Torregatos.jpg"
+    },
+    {
+        "precio": 420,
+        "id": 5,
+        "title": "Juguete de gato",
+        "thumbnailUrl": "../assets/juguete gatos raton.webp"
+    },
+    {
+        "precio": 350,
+        "id": 6,
+        "title": "Juguete de perro",
+        "thumbnailUrl": "../assets/Juguete perros cinta y pelota.jpg"
+    }
+]

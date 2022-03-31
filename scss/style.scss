@@ -1,6 +1,8 @@
 $colororo: #caac27;
 $colorbrillante: #ffd904;
 $home:'Poppins', sans-serif;
+$bg: #171718;
+$orooscuro: #796703;
 
 
 *{
@@ -12,7 +14,7 @@ $home:'Poppins', sans-serif;
 body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 90px 20px 0; 
-    background-color: #171718;
+    background-color: $bg;
     /* NavBar */
     .header{
         background-color: #222020e8;
@@ -299,12 +301,50 @@ section{
 }
 /* Formoluario */
 section{
+    .contactForm {
+        width: 50%;
+        padding: 40px;
+        background: beige;
+        box-shadow: 0px 4px 4px rgb(0, 0, 0, 25%);
+        border-radius: 10px;
+
+        h2 {
+            font-size: 30px;
+            color: $orooscuro;
+            font-weight: 500;
+        }
+        .inputBox {
+            position: relative;
+            width: 100%;
+            margin-top: 10px;
+            input {
+                width: 100%;
+                padding: 5px 0;
+                font-size: 16px;
+                margin: 10px 0;
+                border: none;
+                border-bottom: 2px solid $colororo;
+                outline: none;
+                resize: none;
+            }
+            textarea {
+                width: 100%;
+                padding: 5px 0;
+                font-size: 16px;
+                margin: 10px 0;
+                border: none;
+                border-bottom: 2px solid $colororo;
+                outline: none;
+            }
+        }
+    }
     .suscribete {
-        background-color: rgb(51, 90, 177);
+        background-color: beige;
         text-align: center;
 
         h3 {
             margin: 10px 0;
+            color: $orooscuro;
         }
 
         #form1 {
@@ -313,39 +353,34 @@ section{
                 padding: 10px;
                 margin: 5px 0;
                 border-radius: 6px;
-                background-color: rgb(53, 94, 182);
+                background-color: $orooscuro;
             }
         }
     }
 }
 /* Store */
 main {
-    padding: 20px;
-    .title {
-        color: #796703;
-        text-align: center;
+    padding: 0;
+    margin: 0;
+    background: $bg;
+    .container-store {
+        .title {
+            color: $colororo;
+            text-align: center;
+        }
     }
-    .container-products {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 10px;
-        .product {
-            border: 1px solid #ccc;
-            padding: 20px;
-            .product__description {
-                .product__title{
-                    text-align: center;
-                    color: #ccc;
+    .container {
+        h4 {
+            color: $colororo;
+        }
+        .table {
+            .shop-items{
+                .line-shop {
+                    color: $colorbrillante;
+                    .items-shop {
+                        color: $colorbrillante !important;
+                    }
                 }
-                .product__price {
-                    color: #f2f2f2;
-                }
-            }
-            .product__icon {
-                display: block;
-                text-align: right;
-                color: #796703;
-                margin: auto;
             }
         }
     }
